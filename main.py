@@ -24,7 +24,7 @@ st.sidebar.markdown("##### :gray[All rights reserved.]")
 # Add two columns to the app
 col1, col2 = st.columns(2)
 with col1:
-    text_input = st.text_area("Paste some of that pesky service update word salad here...", height=200)
+    text_input = st.text_area("Paste that update word salad below and activate the Aware Wolf...", height=200)
     context = "\n\n#### Please summarize this dense legalese, regarding updates to service terms and data privacy, into simple terms that laypeople can understand. ###"
     # focus = "\n\n## Please be sure to highlight any peculiar changes and/or odd data handling practices, including, but not limited to third party handling and potential ways to protect your data. ##\n\n"
     # sale = "\n\n# Please suggest any potential open source alternatives to the software described in the request that the user may be able to use instead. #\n\n"
