@@ -26,9 +26,9 @@ col1, col2 = st.columns(2)
 with col1:
     text_input = st.text_area("Paste some of that pesky service update word salad here...", height=200)
     context = "\n\n#### Please summarize this dense legalese, regarding updates to service terms and data privacy, into simple terms that laypeople can understand. ###"
-    focus = "\n\n## Please be sure to highlight any peculiar changes and/or odd data handling practices, including, but not limited to third party handling and potential ways to protect your data. ##\n\n"
-    sale = "\n\n# Please suggest any potential open source alternatives to the software described in the request that the user may be able to use instead. #\n\n"
-    text_input = text_input + context + focus + sale
+    # focus = "\n\n## Please be sure to highlight any peculiar changes and/or odd data handling practices, including, but not limited to third party handling and potential ways to protect your data. ##\n\n"
+    # sale = "\n\n# Please suggest any potential open source alternatives to the software described in the request that the user may be able to use instead. #\n\n"
+    text_input = text_input + context # + focus + sale
 with col2:
     submit = st.button("Activate the Aware Wolf")
     if text_input and submit:
